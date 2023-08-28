@@ -1,0 +1,37 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #09112D;
+    box-shadow: 0 4px 8px 0 rgba(171, 190, 209, 0.40);
+    z-index: 999;
+}
+
+.header_con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.header_contacts a {
+    color: #FFF;
+    font-size: 12px;
+}
+
+.header_contacts a:last-child {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+    .header_contacts {
+        display: none;
+    }
+}

@@ -1,0 +1,115 @@
+.promo {
+    background: url("../../assets/images/promo-bg.png") no-repeat 50% 0 / cover;
+    padding-top: 330px;
+}
+
+.promo h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.promo h1 span {
+    color: #F55B25;
+}
+
+.promo-subtitle {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.promo-btn {
+    width: max-content;
+    margin: 60px auto 0;
+    padding-bottom: 200px;
+}
+
+.promo a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #FBFEFF;
+    background-color: #F55B25;
+    padding: 8px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.promo a:hover {
+    background-color: #19005F;
+}
+
+.why-we {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+.why-we h2 {
+    max-width: 200px;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.why-we p {
+    max-width: 800px;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+}
+
+@media screen and (max-width: 720px){
+    .promo {
+        padding-top: 240px;
+    }
+
+    .promo h1 {
+        max-width: 300px;
+        font-size: 22px;
+        font-weight: 500;
+        margin: 0 auto;
+    }
+
+    .promo-subtitle {
+        max-width: 240px;
+        font-size: 13px;
+        margin: 20px auto 0;
+    }
+
+    .promo-btn {
+        margin: 40px auto 0;
+        padding-bottom: 160px;
+    }
+
+    .promo a {
+        font-size: 12px;
+        padding: 6px 20px;
+    }
+
+    .why-we {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .why-we h2 {
+        max-width: none;
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .why-we p {
+        max-width: 400px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+}

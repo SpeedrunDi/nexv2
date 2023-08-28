@@ -1,0 +1,143 @@
+.feedback {
+    background: url("../../assets/images/feedback-bg.png") no-repeat 50% 100% / cover;
+    padding: 200px 0;
+}
+
+.feedback h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.feedback p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.feedback form {
+    margin-top: 100px;
+    padding: 70px 5%;
+    border-radius: 16px;
+    border: 1px solid #6297FF;
+    background: rgba(23, 60, 216, 0.20);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.input-block {
+    max-width: 340px;
+}
+
+.input-block label {
+    display: block;
+    color: #FCFCFC;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.input-block input {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: #FCFCFC;
+    border: none;
+    padding: 8px 14px;
+}
+
+.input-block input:focus-visible {
+    outline: 1px solid #F55B25;
+}
+
+.form-btn {
+    margin-top: auto;
+}
+
+.form-btn button {
+    cursor: pointer;
+    color: #FBFEFF;
+    padding: 8px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    background: #F55B25;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-btn button:hover {
+    background: #19005F;
+}
+
+.form-btn button:active {
+    background: #FFA06A;
+}
+
+.form-btn button:disabled {
+    pointer-events: none;
+    background-color: #9AE4FE;
+    color: #5EB7CB;
+}
+
+@media screen and (max-width: 720px){
+    .feedback {
+        background: none;
+        padding: 70px 0 80px;
+    }
+
+    .feedback h3 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .feedback p {
+        max-width: 240px;
+        margin: 15px auto 0;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .feedback form {
+        margin-top: 40px;
+        padding: 0 5%;
+        border-radius: 16px;
+        border: none;
+        background: none;
+        backdrop-filter: blur(5px);
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .input-block {
+        min-width: 320px;
+        margin: 0 auto;
+    }
+
+    .input-block label {
+        font-size: 14px;
+    }
+
+    .input-block input {
+        padding: 6px 10px;
+    }
+
+    .input-block input:focus-visible {
+        outline: 1px solid #F55B25;
+    }
+
+    .form-btn {
+        width: 320px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: right;
+    }
+
+    .form-btn button {
+        font-size: 13px;
+    }
+}

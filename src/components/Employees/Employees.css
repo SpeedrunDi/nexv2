@@ -1,0 +1,78 @@
+.employees-con {
+    padding-bottom: 150px!important;
+    padding-top: 150px!important;
+}
+
+.employees-con h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.employees-cards {
+    margin-top: 100px;
+}
+
+.employee-card {
+    border-radius: 12px;
+    background: #FFF;
+    padding: 32px 24px;
+    max-width: 300px;
+    transition: all 0.4s ease;
+}
+
+.employee-card:hover {
+    background-color: #19005F;
+}
+
+.employee-card:hover .employee-card-description  {
+    color: #fff;
+}
+
+.employee-card-img {
+    border-radius: 6px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.employee-card-img img {
+    width: 100%;
+}
+
+.employee-card-description {
+    color: #0C0B11;
+}
+
+.employee-card-description h5 {
+    margin: 20px 0 5px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.employee-card-description p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 720px){
+    .employees-con {
+        padding-bottom: 90px!important;
+        padding-top: 90px!important;
+    }
+
+    .employees-con h3 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .employees-cards {
+        margin-top: 36px;
+    }
+
+    .employee-card-img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,35 @@
+.nav_btn {
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.nav_btn:hover {
+    text-decoration: underline;
+}
+
+.active {
+    color: #F55B25;
+}
+
+@media screen and (max-width: 720px) {
+    .nav_btn {
+        padding: 6px 12px;
+        border-radius: 4px;
+        background: #19005F;
+        transition: background-color 0.4s ease;
+    }
+
+    .nav_btn:hover {
+        text-decoration: none;
+        background-color: #200177;
+    }
+
+    .active {
+        pointer-events: none;
+        color: #fff;
+        background: #6297FF;
+    }
+}

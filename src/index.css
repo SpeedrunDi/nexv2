@@ -1,10 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  background: #09112D;
+  font-size: 15px;
+  font-weight: 400;
+  color: #FFF;
   font-family: 'SF Pro Text', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F55B25;
 }
 
 code {
@@ -12,8 +33,26 @@ code {
     monospace;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+a {
+  color: #fff;
+}
+
 .container {
-  max-width: 1210px;
+  max-width: 1190px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 25px;
+}
+
+.swiper-button-disabled {
+  display: none!important;
 }

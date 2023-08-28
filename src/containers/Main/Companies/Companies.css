@@ -1,0 +1,70 @@
+.companies-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.companies {
+    overflow-x: auto;
+    margin-top: 80px;
+    border-radius: 16px;
+    background: #19005F;
+    padding: 64px 93px;
+}
+
+.companies::-webkit-scrollbar {
+    height: 6px;
+}
+
+.companies-inner {
+    width: 1004px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.companies-card {
+    padding: 20px 30px;
+    border-radius: 12px;
+    background: #FFF;
+}
+
+.companies-card h5 {
+    margin: 0;
+    color: #09112D;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 720px){
+    .companies-title {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .companies {
+        border-radius: 0;
+        padding: 32px 20px;
+        margin: 20px -25px 0;
+    }
+
+    .companies-inner {
+        width: 680px;
+        gap: 6%;
+    }
+
+    .companies-card {
+        padding: 12px 24px;
+        border-radius: 12px;
+        background: #FFF;
+    }
+
+    .companies-card h5 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+}

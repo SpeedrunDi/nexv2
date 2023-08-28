@@ -1,0 +1,119 @@
+.our-projects {
+    position: relative;
+    padding: 150px 0;
+}
+
+.our-projects-con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-projects-title h3 {
+    text-transform: uppercase;
+    max-width: 250px;
+    padding: 32px 20px;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 800;
+    background: url("../../assets/images/our-projects-title.png") no-repeat 50% 50% / 100%;
+}
+
+.our-projects-title p {
+    max-width: 300px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.our-projects-row {
+    overflow-x: auto;
+}
+
+.our-projects-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 60px;
+}
+
+.our-projects-card {
+    max-width: 300px;
+    color: #0C0B11;
+    padding: 32px 24px;
+    border-radius: 12px;
+    background: #FFF;
+}
+
+.our-projects-card div {
+    width: 50px;
+    height: 50px;
+}
+
+.our-projects-card div img {
+    width: 100%;
+}
+
+.our-projects-card h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0 16px;
+}
+
+.our-projects-card p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+}
+
+@media screen and (max-width: 720px){
+    .our-projects {
+        padding: 70px 0 130px;
+    }
+
+    .our-projects-con {
+        flex-direction: column;
+    }
+
+    .our-projects-title h3 {
+        max-width: max-content;
+        padding: 20px 0;
+        margin: 0 auto;
+        font-size: 22px;
+        font-weight: 500;
+        background: none;
+    }
+
+    .our-projects-title p {
+        text-align: center;
+        max-width: 200px;
+        font-size: 13px;
+        font-weight: 400;
+        margin: 0 auto 30px;
+    }
+
+    .our-projects-row::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .our-projects-inner {
+        width: 1200px;
+        flex-wrap: nowrap;
+        gap: 40px;
+        padding-bottom: 10px;
+    }
+
+    .our-projects-card {
+        width: 280px;
+        padding: 20px 18px;
+    }
+
+    .our-projects-card h5 {
+        font-size: 17px;
+        font-weight: 400;
+        margin: 16px 0 12px;
+    }
+
+    .our-projects-card p {
+        font-size: 13px;
+        font-weight: 400;
+    }
+}

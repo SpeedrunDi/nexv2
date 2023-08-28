@@ -1,0 +1,56 @@
+.our-advantages {
+    position: relative;
+    padding: 110px 0 150px;
+    background:
+            url("../../assets/images/orange-bg.png") no-repeat 0 20% / 600px,
+            url("../../assets/images/blue-bg.png") no-repeat 100% 0 / 800px;
+}
+
+.our-advantages-title h3 {
+    text-transform: uppercase;
+    max-width: 370px;
+    padding: 40px 10px;
+    margin: 0 auto 90px;
+    font-size: 40px;
+    font-weight: 800;
+    background: url("../../assets/images/our-advantages-title.png") no-repeat 50% 50% / 100%;
+}
+
+.our-advantages-row {
+    overflow-x: auto;
+}
+
+.our-advantages-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+@media screen and (max-width: 720px){
+    .our-advantages {
+        padding: 70px 0 30px;
+        background: none;
+    }
+
+    .our-advantages-title h3 {
+        max-width: none;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto 40px;
+        font-size: 22px;
+        font-weight: 500;
+        background: none;
+    }
+
+    .our-advantages-row::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .our-advantages-inner {
+        width: 960px;
+        flex-wrap: nowrap;
+        gap: 40px;
+        padding-bottom: 10px;
+    }
+}
